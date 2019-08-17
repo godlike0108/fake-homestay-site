@@ -167,3 +167,6 @@ curl -o ./images/Archive/B/table_08.gif --create-dirs http://www.ilan-traveler.c
 curl -o ./images/Archive/B/table_09.gif --create-dirs http://www.ilan-traveler.com/images/Archive/B/table_09.gif
 curl -o ./images/theme/OHAYA01/images/botton_02.gif"><img src="images/theme/OHAYA01/images/botton_01.gif --create-dirs http://www.ilan-traveler.com/images/theme/OHAYA01/images/botton_02.gif"><img src="images/theme/OHAYA01/images/botton_01.gif
 curl -o ./images/theme/OHAYA01/images/botton_02.gif --create-dirs http://www.ilan-traveler.com/images/theme/OHAYA01/images/botton_02.gif
+
+
+curl -o ./images/theme/OHAYA01/images/botton_01.gif --create-dirs http://www.ilan-traveler.com/images/theme/OHAYA01/images/botton_01.gif
