@@ -7,7 +7,7 @@ $(document).ready(function(){
     setTimeout(function() {
       $('#loading').toggleClass('hide');
       $('#first-prize').toggleClass('hide');
-    }, 3000)
+    }, 2000)
   })
 
   // Click popup-backdrop to hide
