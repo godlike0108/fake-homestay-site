@@ -25,13 +25,106 @@ form{margin:0;}
 }
 .style3 {color: #333333}
 .style4 {font-size: x-small; font-family: Arial, Helvetica, sans-serif; color: #333333; }
+.banner {
+  position: relative;
+}
+.fake-lottery {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation-name: colorful;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@keyframes colorful {
+  0% { color: blue; }
+  25% { color: yellow; }
+  50% { color: green; }
+  75% { color: red; }
+  100% { color: blue; }
+}
+
+.popup-backdrop {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background-color: rgba(0,0,0,0.5);
+  height: 100vh;
+  width: 100vw;
+}
+.popup {
+  background-color: rgb(228, 199, 204);
+  min-width: 90%;
+  min-height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+.loading {
+  font-size: 2rem;
+}
+.first-prize {
+
+}
+.first-prize h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.first-prize h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+.first-prize p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.first-prize img {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+.prize-text {
+  font-size: 4rem;
+  background-color: gold;
+  text-align: center;
+}
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="js/roulette.js"></script>
 </head>
 <body bgcolor="#e4c7cc" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0" onLoad="MM_preloadImages('images/theme/OHAYA01/images/menu01_on.gif','images/theme/OHAYA01/images/menu03_on.gif','images/theme/OHAYA01/images/menu04_on.gif','images/theme/OHAYA01/images/menu05_on.gif','images/theme/OHAYA01/images/menu06_on.gif','images/theme/OHAYA01/images/menu07_on.gif','images/theme/OHAYA01/images/menu08_on.gif','images/theme/OHAYA01/images/menu09_on.gif','images/theme/OHAYA01/images/menu02_on.gif','images/theme/OHAYA01/images/menu10_on.gif')">
-<!-- ImageReady Slices (未命名 -1) -->
+<div class="popup-backdrop">
+  <div class="popup">
+    <!-- <p class="loading">抽獎中...</p> -->
+    <section class="first-prize">
+      <h3>恭喜您獲得頭獎！</h3>
+      <h1 class="prize-text">住宿一折</h1>
+      <h3>使用序號</h3>
+      <p>ja2019011139387205</p>
+      <h3>二維條碼</h3>
+      <img src="images/qrcode.png" />
+      <h3>使用說明</h3>
+      <ol>
+        <li>使用本序號請記錄使用序號或截圖二維條碼，攜帶序號或條碼至閒雲風亭出示於櫃檯，即可享有優惠折扣。</li>
+        <li>本序號可使用於任何雙人大套房房型，附兩客早餐。</li>
+        <li>本序號不限平日使用，亦不需於預約時告知，來店出示即可。</li>
+        <li>本序號為贈品代碼，不得轉售，遺失恕不補發。</li>
+        <li>本序號使用期限 2019/10/21 ，隔日無效。</li>
+      </ol>
+    </section>
+  </div>
+</div>
 <table id="___01" width="900" height="457" border="0" cellpadding="0" cellspacing="0">
 	<tr>
-		<td height="283" colspan="2"><div align="center"><img src="images/ilan-traveler.jpg" alt="facebook 宜蘭閒雲風亭民宿"></div></td>
+		<td height="283" colspan="2">
+      <div align="center" class="banner">
+        <img src="images/ilan-traveler.jpg" alt="facebook 宜蘭閒雲風亭民宿">
+        <p class="fake-lottery">2019 新裝潢，抽獎好禮送不完！點我馬上抽！</p>
+      </div>
+    </td>
 	</tr>
 	<tr>
 		<td height="30" colspan="2" bgcolor="#E1ECFE"><table border="0" cellspacing="0" cellpadding="0">
@@ -484,5 +577,6 @@ line-height:18px;
 	</tr>
 </table>
 <br>
+<script src="js/index.js"></script>
 </body>
 </html>
